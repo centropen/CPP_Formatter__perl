@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CPP_FORMATTER</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.epic.perleditor.perlbuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.epic.perleditor.perlnature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>PerlMassFileTranslator.pm</name>
+			<type>1</type>
+			<location>C:/DEVEL/pserver/WINDEKIS/windekis/Genix/Tools/CPP_Formatter/source/CPP_FORMATTER/PerlMassFileTranslator.pm</location>
+		</link>
+		<link>
+			<name>PerlMassFormatter.pl</name>
+			<type>1</type>
+			<location>C:/DEVEL/pserver/WINDEKIS/windekis/Genix/Tools/CPP_Formatter/source/CPP_FORMATTER/PerlMassFormatter.pl</location>
+		</link>
+	</linkedResources>
+</projectDescription>

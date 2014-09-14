@@ -1,0 +1,130 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Project DB Report Update</title>
+<link xmlns:xslthl="http://xslthl.sf.net" type="text/css" rel="stylesheet" href="web/base.css">
+</head>
+<body>
+	<script src="web/d3.v3.min.js"></script>
+	<script src="web/CollapsibleNodes.js"></script>
+	<div class="navheader">
+		<div>
+			<div class="navbar">
+			<p>Generated at: <strong>02.09.2014 at 15:05:08<strong></p>
+			</div>
+		</div>
+	</div>
+	<div class="chapter">
+		<div class="titlepage">
+			<div>
+				<div>
+					<h1>
+						Hello Monika.Mueller The
+						Automatic CPP_Formatter v. 0.01
+					</h1>
+				</div>
+				<div>
+					<h3 class="title">
+						Set path for formatting files: <strong>c:/DEVEL/pserver/WINDEKIS/windekis/</strong> 
+						<br>+Regular Expression: | <strong>^DbDesc.*\.cpp</strong> |
+						-Regular Expression: | <strong>.*Zusatz.*</strong> |
+						Chosen Prefix for new files: | 000_ |
+					</h2>
+				</div>
+				<div>
+					<h4 class="title">
+						<p>Number of found files: <strong>417</strong>  |  Original Size: <strong>22.373.525 Bytes</strong>
+								  	 	   		  													  |  New Size: <strong>20.975.485 Bytes</strong>
+																									  |  Size Difference: <strong>1.398.040 Bytes</strong>
+						</p>
+					</h3>
+				</div>
+			</div>
+		</div>
+		<p>
+			The Project PerlMassFormatter.pl is based perl application that automatically reformat the input files in aligned columns,
+			compress the file in size. By default signature is off for the capacity file purposes.
+			This report is generated in the end of the finished process providing full information about your CPP update.
+			The files are for security sake backuped into other files saved under the same path with your defined prefix in a file name.
+			The new generated files should replace the old source files. This job can be started explicitelly by the same application, or joined to do it 
+			in one step (not recommended).
+		</p>
+		<p>This tool can be started either separately or from ODBMApper application with a comfortable GUI.</p>
+		<div class="section">
+			<div class="titlepage">
+				<div>
+					<div>
+						<h2 class="title">
+							<a name="N143CA"></a>Usage
+						</h2>
+					</div>
+				</div>
+			</div>
+			<p>To use the Project CPP Perl Formatter tool, write in the command line:</p>
+			<pre class="programlisting">TODO: perl DONE:PerlMassFormatter.pl -s [path to the folder] <span
+					xmlns:xslthl="http://xslthl.sf.net" class="hl-string">'project-report'</span>
+			</pre>
+		</div>	
+	</div>	
+
+<!-- 
+<table>  
+<tr> 
+<th>#</th>
+<th>Version #</th> 
+<th>RelPath</th>  
+<th>File</th> 
+<th>Total Error count</th>
+<th>Status (OK|NOK|WARNING)</th>
+<th>Error types</th>
+<th>Error count</th>
+<th>Warning types</th>
+<th>Warning count</th>
+</tr>
+
+</table>
+-->
+
+   				<!-- JSON -->
+<script>
+var margin = {top: 20, right: 120, bottom: 20, left: 120},
+    width = 3960 - margin.right - margin.left,
+    height =3960 - margin.top - margin.bottom;
+    
+var i = 0,
+    duration = 750,
+    root;
+
+var tree = d3.layout.tree()
+    .size([height, width]);
+
+var diagonal = d3.svg.diagonal()
+    .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width + margin.right + margin.left)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("20140902150508.json", function(error, flare) {
+  root = flare;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+    if (d.children) {
+      d._children = d.children;
+      d._children.forEach(collapse);
+      d.children = null;
+    }
+  }
+
+  <!--root.children.forEach(collapse); //animation-->
+  update(root);
+});
+
+d3.select(self.frameElement).style("height", "800px");
+</script>
+</body>
+</html>
